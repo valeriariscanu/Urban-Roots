@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Roots - Your UK Urban Gardening Community</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            color: #1e293b; /* Dark text */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #16a34a;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #15803d;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <header class="bg-green-700 p-4 shadow-lg rounded-b-xl sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <h1 class="text-3xl font-bold text-white mb-2 md:mb-0">Urban Roots</h1>
+            <nav class="flex flex-wrap gap-3 md:gap-6">
+                <a href="#home" class="px-4 py-2 rounded-lg text-green-100 hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium">Home</a>
+                <a href="#community" class="px-4 py-2 rounded-lg text-green-100 hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium">Community</a>
+                <a href="#groups" class="px-4 py-2 rounded-lg text-green-100 hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium">Groups</a>
+                <a href="#marketplace" class="px-4 py-2 rounded-lg text-green-100 hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium">Marketplace</a>
+                <a href="#events" class="px-4 py-2 rounded-lg text-green-100 hover:bg-green-600 hover:text-white transition-colors duration-300 font-medium">Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+
+        <!-- Home Section -->
+        <section id="home" class="mb-12 p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-xl text-center max-w-5xl mx-auto">
+            <h2 class="text-5xl font-extrabold text-green-800 mb-6 leading-tight">Welcome to Urban Roots!</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-10 max-w-3xl mx-auto">
+                Your vibrant digital community platform for UK urban gardeners. Connect with fellow enthusiasts, share knowledge, find local groups, and trade your surplus produce. Whether you're a balcony botanist or an allotment veteran, Urban Roots is your space to grow!
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200">
+                    <div class="text-5xl mb-4 text-green-600">🌱</div>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Connect & Share</h3>
+                    <p class="text-gray-600">Engage in lively discussions, ask questions, and share your gardening triumphs and challenges.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200">
+                    <div class="text-5xl mb-4 text-green-600">🏘️</div>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Local Groups</h3>
+                    <p class="text-gray-600">Discover and join hyper-local groups to connect with gardeners in your immediate area.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200">
+                    <div class="text-5xl mb-4 text-green-600">🍎</div>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Produce Exchange</h3>
+                    <p class="text-gray-600">Trade your surplus harvests with others in your community, reducing waste and fostering local sharing.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200">
+                    <div class="text-5xl mb-4 text-green-600">🗓️</div>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Community Events</h3>
+                    <p class="text-gray-600">Find and organize local seed swaps, workshops, and gardening meetups.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Feed Section -->
+        <section id="community" class="mb-12 p-6 bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-green-100">
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-center">Community Feed</h2>
+            <div class="space-y-6">
+                <!-- Post Creation Form (Placeholder) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4">Share your gardening thoughts...</h3>
+                    <textarea class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-y min-h-[80px]" placeholder="Type your post here..."></textarea>
+                    <button class="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">Post to Community</button>
+                </div>
+                <!-- Example Post 1 (Chloe-like) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <p class="text-lg text-gray-800 mb-3">"My basil plant is wilting! Any tips for balcony growing in this heat? I'm in East London."</p>
+                    <div class="text-sm text-gray-500 flex justify-between items-center">
+                        <span>Posted by <span class="font-semibold text-green-700">ChloeB_28</span></span>
+                        <span>July 10, 2025, 10:30 AM</span>
+                    </div>
+                </div>
+                <!-- Example Post 2 (David-like) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <p class="text-lg text-gray-800 mb-3">"Just harvested a bumper crop of potatoes from my Manchester allotment. Happy to share some growing secrets if anyone's interested!"</p>
+                    <div class="text-sm text-gray-500 flex justify-between items-center">
+                        <span>Posted by <span class="font-semibold text-green-700">AllotmentDave58</span></span>
+                        <span>July 9, 2025, 3:15 PM</span>
+                    </div>
+                </div>
+                <!-- Example Post 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <p class="text-lg text-gray-800 mb-3">"Looking for advice on companion planting for tomatoes. What works best in a small raised bed?"</p>
+                    <div class="text-sm text-gray-500 flex justify-between items-center">
+                        <span>Posted by <span class="font-semibold text-green-700">GreenThumbGabby</span></span>
+                        <span>July 8, 2025, 7:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <button class="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">
+                Load More Posts
+            </button>
+        </section>
+
+        <!-- Groups Section -->
+        <section id="groups" class="mb-12 p-6 bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-green-100">
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-center">Gardening Groups</h2>
+            <!-- Create New Group Form (Placeholder) -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
+                <h3 class="text-xl font-semibold text-green-700 mb-4">Create a New Group</h3>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Group Name (e.g., Hackney Balcony Growers)">
+                <textarea class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-y min-h-[80px]" placeholder="Group Description"></textarea>
+                <button class="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">Create Group</button>
+            </div>
+            <div class="space-y-6">
+                <!-- Example Group 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Hackney Balcony Growers</h3>
+                    <p class="text-gray-700 mb-3">A community for balcony and container gardeners in the Hackney area of London. Share tips, challenges, and successes!</p>
+                    <p class="text-sm text-gray-500 mb-3">Members: 145</p>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 font-medium">Join Group</button>
+                </div>
+                <!-- Example Group 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Manchester Allotment Veterans</h3>
+                    <p class="text-gray-700 mb-3">For experienced allotment holders in and around Manchester. Share wisdom, organize swaps, and discuss advanced techniques.</p>
+                    <p class="text-sm text-gray-500 mb-3">Members: 82</p>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 font-medium">Join Group</button>
+                </div>
+                <!-- Example Group 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">UK Seed Swap Collective</h3>
+                    <p class="text-gray-700 mb-3">Connect with gardeners across the UK for non-commercial seed exchanges. Share your rare varieties!</p>
+                    <p class="text-sm text-gray-500 mb-3">Members: 310</p>
+                    <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 font-medium">Join Group</button>
+                </div>
+            </div>
+            <button class="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">
+                Browse All Groups
+            </button>
+        </section>
+
+        <!-- Marketplace Section -->
+        <section id="marketplace" class="mb-12 p-6 bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-green-100">
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-center">Community Marketplace (Non-Commercial)</h2>
+            <!-- Add New Listing Form (Placeholder) -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
+                <h3 class="text-xl font-semibold text-green-700 mb-4">Offer Your Surplus Produce</h3>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Item (e.g., Surplus Tomatoes)">
+                <textarea class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-y min-h-[80px]" placeholder="Description (e.g., Homegrown organic, pick up this weekend)"></textarea>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Your Location (e.g., Manchester, SW London)">
+                <button class="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">Add Listing</button>
+            </div>
+            <div class="space-y-6">
+                <!-- Example Listing 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Surplus Courgettes</h3>
+                    <p class="text-gray-700 mb-2">Homegrown organic courgettes, too many for one family! Free to a good home, pick up from SW London this weekend.</p>
+                    <p class="text-gray-600 text-sm mb-3">Location: <span class="font-medium">SW London</span></p>
+                    <div class="text-sm text-gray-500 flex justify-between items-center">
+                        <span>Offered by <span class="font-semibold text-green-700">UrbanGrower_77</span></span>
+                        <span>July 11, 2025, 9:00 AM</span>
+                    </div>
+                </div>
+                <!-- Example Listing 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Tomato Seedlings</h3>
+                    <p class="text-gray-700 mb-2">Extra 'Moneymaker' tomato seedlings ready for planting. Happy to swap for pepper seedlings or small herb pots.</p>
+                    <p class="text-gray-600 text-sm mb-3">Location: <span class="font-medium">Birmingham</span></p>
+                    <div class="text-sm text-gray-500 flex justify-between items-center">
+                        <span>Offered by <span class="font-semibold text-green-700">SeedSwapQueen</span></span>
+                        <span>July 10, 2025, 2:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <button class="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">
+                View All Listings
+            </button>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="mb-12 p-6 bg-white rounded-2xl shadow-xl max-w-3xl mx-auto border border-green-100">
+            <h2 class="text-4xl font-bold text-green-800 mb-8 text-center">Community Events</h2>
+            <!-- Add New Event Form (Placeholder) -->
+            <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 mb-6">
+                <h3 class="text-xl font-semibold text-green-700 mb-4">Organize a New Event</h3>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Event Name (e.g., Local Seed Swap)">
+                <input type="date" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Location (e.g., Community Hall, Park)">
+                <textarea class="w-full p-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-y min-h-[80px]" placeholder="Event Description"></textarea>
+                <button class="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">Create Event</button>
+            </div>
+            <div class="space-y-6">
+                <!-- Example Event 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Beginner Composting Workshop</h3>
+                    <p class="text-gray-700 mb-1">Date: <span class="font-medium">August 5, 2025</span></p>
+                    <p class="text-gray-700 mb-2">Location: <span class="font-medium">Community Garden, Bristol</span></p>
+                    <p class="text-gray-600 text-sm mb-3">Learn the basics of home composting to enrich your soil and reduce waste. All welcome!</p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span>Attendees: 25</span>
+                        <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 font-medium">RSVP</button>
+                    </div>
+                </div>
+                <!-- Example Event 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Autumn Seed Swap & Plant Sale</h3>
+                    <p class="text-gray-700 mb-1">Date: <span class="font-medium">September 20, 2025</span></p>
+                    <p class="text-gray-700 mb-2">Location: <span class="font-medium">Local Park Pavilion, Edinburgh</span></p>
+                    <p class="text-gray-600 text-sm mb-3">Bring your saved seeds and surplus plants to swap with fellow gardeners. Refreshments available.</p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span>Attendees: 60</span>
+                        <button class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 font-medium">RSVP</button>
+                    </div>
+                </div>
+            </div>
+            <button class="mt-8 w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 font-semibold shadow-md">
+                View All Events
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white p-6 mt-12 rounded-t-xl shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 Urban Roots. All rights reserved. | <a href="#" class="hover:underline text-green-200">Privacy Policy</a> | <a href="#" class="hover:underline text-green-200">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
