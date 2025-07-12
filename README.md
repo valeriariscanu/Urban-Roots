@@ -1,6 +1,6 @@
 Introduction
-The final product is a working web page of Urban Roots, coded in HTML and CSS. This webpage can be found on https://gabrielscheib.com/research/urbanroots/index.html. The application has no backend element, and the content is hard-coded. This methodology was the most relevant approach to concentrate on the front-end visual aspects, without losing sight of the structure. This methodology aimed to materialise the visual design and organisational aspects described in the strategic plan.
-Strengths of this Implementation
+
+Building the Urban Roots platform as an html/css application without any backend integration allowed for a narrow-scope look at the front-end implementation and design of a web-app using the given strategic plan. This translation of the platform design into code was focused on the visual and organizational components without any dynamic functionality.
 
 1.	Direct Visual Translation of Design Plan: The application demonstrates a direct and successful translation of the aesthetic and structural elements as outlined in the "Urban Roots" strategic plan. The utilisation of a green-centric colour palette, rounded corners, and clear sectioning (Home, Community, Groups, Marketplace, Events) directly reflects the intended user interface and branding. The inclusion of placeholder content, specifically crafted to resonate with the "Chloe, the Balcony Botanist" and "David, the Allotment Veteran" personas, effectively demonstrates how the platform would visually support a "two-sided knowledge market." For example, a "balcony botanist" query on the community feed and an "allotment veteran" offering surplus produce in the marketplace illustrate the diverse interactions envisioned.
 
